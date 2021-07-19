@@ -23,6 +23,13 @@ else{
     
 }
 
+if(window.innerHeight > 770){
+    document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
+}
+else {
+    document.documentElement.style.setProperty('--secHeight', 'auto');
+}
+
 window.addEventListener('resize', function(event){
     if (window.innerWidth < 1320){
         document.documentElement.style.setProperty('--aboutTop', '100px');
@@ -47,6 +54,12 @@ window.addEventListener('resize', function(event){
     else{
         document.documentElement.style.setProperty('--secHeight', 'auto');
 
+    }
+    if(window.innerHeight > 770){
+        document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
+    }
+    else {
+        document.documentElement.style.setProperty('--secHeight', 'auto');
     }
 });
 
