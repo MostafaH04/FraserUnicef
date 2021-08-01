@@ -6,30 +6,54 @@ if (window.innerWidth < 830) {
 }
 
 if (window.innerWidth < 830){
-        document.documentElement.style.setProperty('--aboutTop', '80px');
-        document.documentElement.style.setProperty('--aboutBottom', '105px');
-        document.documentElement.style.setProperty('--aboutWidth', '415px');
-        document.documentElement.style.setProperty('--aboutinfo', '18px');
-        document.documentElement.style.setProperty('--aboutinfoWidth', '420px');
-        document.documentElement.style.setProperty('--execMarg', '40px');
+    document.documentElement.style.setProperty('--aboutTop', '60px');
+    document.documentElement.style.setProperty('--aboutBottom', '78px');
+    document.documentElement.style.setProperty('--aboutWidth', '310px');
+    document.documentElement.style.setProperty('--aboutinfo', '16px');
+    document.documentElement.style.setProperty('--aboutinfoWidth', '310px');
+    document.documentElement.style.setProperty('--execMarg', '20px');
+    document.documentElement.style.setProperty('--execTextTitle', '30px');
+    document.documentElement.style.setProperty('--execText', '20px');
+    document.documentElement.style.setProperty('--execImg', '90px');
 
-    }else if (window.innerWidth < 1320){
-        document.documentElement.style.setProperty('--aboutTop', '100px');
-        document.documentElement.style.setProperty('--aboutBottom', '133px');
-        document.documentElement.style.setProperty('--aboutWidth', '520px');
-        document.documentElement.style.setProperty('--aboutinfo', '21px');
-        document.documentElement.style.setProperty('--aboutinfoWidth', '522px');
-        document.documentElement.style.setProperty('--execMarg', '100px');
-
-    }else{
-        document.documentElement.style.setProperty('--aboutTop', '120px');
-        document.documentElement.style.setProperty('--aboutBottom', '160px');
-        document.documentElement.style.setProperty('--aboutWidth', '618px');
-        document.documentElement.style.setProperty('--aboutinfo', '25px');
-        document.documentElement.style.setProperty('--aboutinfoWidth', '620px');
-        document.documentElement.style.setProperty('--execMarg', '100px');
-
+    var a = document.getElementsByClassName("execTitle");
+    for (let i = 0; i < a.length; i++){
+        a[i].style.display = 'none';
     }
+    
+
+}else if (window.innerWidth < 1320){
+    document.documentElement.style.setProperty('--aboutTop', '100px');
+    document.documentElement.style.setProperty('--aboutBottom', '133px');
+    document.documentElement.style.setProperty('--aboutWidth', '520px');
+    document.documentElement.style.setProperty('--aboutinfo', '21px');
+    document.documentElement.style.setProperty('--aboutinfoWidth', '522px');
+    document.documentElement.style.setProperty('--execMarg', '100px');
+    document.documentElement.style.setProperty('--execTextTitle', '40px');
+    document.documentElement.style.setProperty('--execText', '30px');
+    document.documentElement.style.setProperty('--execImg', '120px');
+
+    var a = document.getElementsByClassName("execTitle");
+    for (let i = 0; i < a.length; i++){
+        a[i].style.display = 'block';
+    }
+
+}else{
+    document.documentElement.style.setProperty('--aboutTop', '120px');
+    document.documentElement.style.setProperty('--aboutBottom', '160px');
+    document.documentElement.style.setProperty('--aboutWidth', '618px');
+    document.documentElement.style.setProperty('--aboutinfo', '25px');
+    document.documentElement.style.setProperty('--aboutinfoWidth', '620px');
+    document.documentElement.style.setProperty('--execMarg', '100px');
+    document.documentElement.style.setProperty('--execTextTitle', '40px');
+    document.documentElement.style.setProperty('--execText', '30px');
+    document.documentElement.style.setProperty('--execImg', '120px');
+
+    var a = document.getElementsByClassName("execTitle");
+    for (let i = 0; i < a.length; i++){
+        a[i].style.display = 'block';
+    }
+}
 
 if (window.innerWidth > 1119){
     document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
@@ -49,13 +73,19 @@ else {
 
 window.addEventListener('resize', function(event){
     if (window.innerWidth < 830){
-        document.documentElement.style.setProperty('--aboutTop', '80px');
-        document.documentElement.style.setProperty('--aboutBottom', '105px');
-        document.documentElement.style.setProperty('--aboutWidth', '415px');
-        document.documentElement.style.setProperty('--aboutinfo', '18px');
-        document.documentElement.style.setProperty('--aboutinfoWidth', '420px');
-        document.documentElement.style.setProperty('--execMarg', '40px');
-
+        document.documentElement.style.setProperty('--aboutTop', '60px');
+        document.documentElement.style.setProperty('--aboutBottom', '78px');
+        document.documentElement.style.setProperty('--aboutWidth', '310px');
+        document.documentElement.style.setProperty('--aboutinfo', '16px');
+        document.documentElement.style.setProperty('--aboutinfoWidth', '310px');
+        document.documentElement.style.setProperty('--execMarg', '20px');
+        
+        var a = document.getElementsByClassName("execTitle");
+        for (let i = 0; i < a.length; i++){
+            a[i].style.display = 'none';
+        }
+        
+    
     }else if (window.innerWidth < 1320){
         document.documentElement.style.setProperty('--aboutTop', '100px');
         document.documentElement.style.setProperty('--aboutBottom', '133px');
@@ -63,7 +93,11 @@ window.addEventListener('resize', function(event){
         document.documentElement.style.setProperty('--aboutinfo', '21px');
         document.documentElement.style.setProperty('--aboutinfoWidth', '522px');
         document.documentElement.style.setProperty('--execMarg', '100px');
-
+        var a = document.getElementsByClassName("execTitle");
+        for (let i = 0; i < a.length; i++){
+            a[i].style.display = 'block';
+        }
+    
     }else{
         document.documentElement.style.setProperty('--aboutTop', '120px');
         document.documentElement.style.setProperty('--aboutBottom', '160px');
@@ -71,7 +105,11 @@ window.addEventListener('resize', function(event){
         document.documentElement.style.setProperty('--aboutinfo', '25px');
         document.documentElement.style.setProperty('--aboutinfoWidth', '620px');
         document.documentElement.style.setProperty('--execMarg', '100px');
-
+    
+        var a = document.getElementsByClassName("execTitle");
+        for (let i = 0; i < a.length; i++){
+            a[i].style.display = 'block';
+        }
     }
 
     

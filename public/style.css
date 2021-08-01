@@ -7,6 +7,9 @@
     --aboutinfoWidth: 620px;
 
     --execMarg: 50px;
+    --execTextTitle: 40px; 
+    --execText: 30px;
+    --execImg: 120px;
 }
 
 * {
@@ -111,7 +114,7 @@ a.anchor {
 .about .info {
     align-items: left;
     height: auto;
-    margin-left:50px;
+    margin-left:20px;
     margin-top: 60px;
     margin-bottom: 80px;
 }
@@ -130,7 +133,7 @@ a.anchor {
     float:right;
     font-size: var(--aboutTop);
     font-weight: 600;
-    margin-bottom: -60px;
+    margin-bottom: -30px;
 
 }
 
@@ -144,12 +147,12 @@ a.anchor {
     font-size: var(--aboutinfo);
     width: var(--aboutinfoWidth);
     margin-left:10px;
-    margin-top:-20px;
+    margin-top:0px;
     margin-bottom: 50px;
 }
 
 .about .info .donate-btn {
-    margin-left: 20px;
+    margin-left: 0px;
     background-color: orange;
     color:white;
     font-size: 20px;
@@ -254,7 +257,7 @@ a.anchor {
 .executives h2 {
     color: orange;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: var(--execTextTitle);
     margin-right:30px;
     margin-left:30px;
 }
@@ -276,13 +279,13 @@ a.anchor {
 }
 
 .exec-container p {
-    font-size: 30px;
+    font-size: var(--execText);
     font-weight: 500;
 }
 
 .exec-container .img {
-    min-width: 120px;
-    height: 120px;
+    min-width: var(--execImg);
+    height: var(--execImg);
     object-fit: fill;
     border-radius: 50%;
     background-color: rgb(50, 146, 255);
@@ -291,7 +294,7 @@ a.anchor {
 }
 
 .exec-container img{
-    width: 120px;
+    width: var(--execImg);
     height: auto;
     object-fit: cover;
 }
