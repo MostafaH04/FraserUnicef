@@ -5,31 +5,31 @@ if (window.innerWidth < 830) {
     cover.style.display = "none";
 }
 
-if (window.innerWidth < 630){
-    document.documentElement.style.setProperty('--aboutTop', '80px');
-    document.documentElement.style.setProperty('--aboutBottom', '105px');
-    document.documentElement.style.setProperty('--aboutWidth', '415px');
-    document.documentElement.style.setProperty('--aboutinfo', '18px');
-    document.documentElement.style.setProperty('--aboutinfoWidth', '420px');
-    document.documentElement.style.setProperty('--execMarg', '40px');
+if (window.innerWidth < 830){
+        document.documentElement.style.setProperty('--aboutTop', '80px');
+        document.documentElement.style.setProperty('--aboutBottom', '105px');
+        document.documentElement.style.setProperty('--aboutWidth', '415px');
+        document.documentElement.style.setProperty('--aboutinfo', '18px');
+        document.documentElement.style.setProperty('--aboutinfoWidth', '420px');
+        document.documentElement.style.setProperty('--execMarg', '40px');
 
-}else if (window.innerWidth < 1320){
-    document.documentElement.style.setProperty('--aboutTop', '100px');
-    document.documentElement.style.setProperty('--aboutBottom', '133px');
-    document.documentElement.style.setProperty('--aboutWidth', '520px');
-    document.documentElement.style.setProperty('--aboutinfo', '21px');
-    document.documentElement.style.setProperty('--aboutinfoWidth', '522px');
-    document.documentElement.style.setProperty('--execMarg', '100px');
+    }else if (window.innerWidth < 1320){
+        document.documentElement.style.setProperty('--aboutTop', '100px');
+        document.documentElement.style.setProperty('--aboutBottom', '133px');
+        document.documentElement.style.setProperty('--aboutWidth', '520px');
+        document.documentElement.style.setProperty('--aboutinfo', '21px');
+        document.documentElement.style.setProperty('--aboutinfoWidth', '522px');
+        document.documentElement.style.setProperty('--execMarg', '100px');
 
-}else{
-    document.documentElement.style.setProperty('--aboutTop', '120px');
-    document.documentElement.style.setProperty('--aboutBottom', '160px');
-    document.documentElement.style.setProperty('--aboutWidth', '618px');
-    document.documentElement.style.setProperty('--aboutinfo', '25px');
-    document.documentElement.style.setProperty('--aboutinfoWidth', '620px');
-    document.documentElement.style.setProperty('--execMarg', '100px');
+    }else{
+        document.documentElement.style.setProperty('--aboutTop', '120px');
+        document.documentElement.style.setProperty('--aboutBottom', '160px');
+        document.documentElement.style.setProperty('--aboutWidth', '618px');
+        document.documentElement.style.setProperty('--aboutinfo', '25px');
+        document.documentElement.style.setProperty('--aboutinfoWidth', '620px');
+        document.documentElement.style.setProperty('--execMarg', '100px');
 
-}
+    }
 
 if (window.innerWidth > 1119){
     document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
@@ -48,7 +48,7 @@ else {
 }
 
 window.addEventListener('resize', function(event){
-    if (window.innerWidth < 630){
+    if (window.innerWidth < 830){
         document.documentElement.style.setProperty('--aboutTop', '80px');
         document.documentElement.style.setProperty('--aboutBottom', '105px');
         document.documentElement.style.setProperty('--aboutWidth', '415px');
