@@ -18,18 +18,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body id = "bod">
+    <div class = "cover" id = "cover"></div>
     <header>
       <div class = "logo">
         <img src = "https://firebasestorage.googleapis.com/v0/b/fraserunicef-c7b03.appspot.com/o/Other%20assets%2Flogo500.png?alt=media&token=d2ecca6d-5463-4aed-ab99-e44d42f1567d">
         <p>FRASER UNICEF</p>
       </div>
-      
-      <div class = "nav">
-        <a id = "about-btn" href = "#about">About</a>
-        <a id = "event-btn" href = "#events">Events</a>
-        <a id = "exec-btn" href = "#executives">Meet the Execs</a>
-        <a id = "contact-btn" href = "#contact">Contact</p>
+      <div class="container" id = "cont" onclick="menuFunc()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class = "nav" id = "nav-links">
+        <a id = "about-btn"  onclick="menuFunc()" href = "#about">About</a>
+        <a id = "event-btn" onclick="menuFunc()" href = "#events">Events</a>
+        <a id = "exec-btn" onclick="menuFunc()" href = "#executives">Meet the Execs</a>
+        <a id = "contact-btn" onclick="menuFunc()" href = "#contact">Contact</p>
         <a href = "https://amplify.netdonor.net/2261/fundraise-for-unicef-canada-en/104400/fraser-unicefs-fundraising-page" target="blank_" class = "donate-btn">Donate</a>
       </div>
     </header>
@@ -123,7 +128,7 @@
           <div class = "exec-container">
             <div class = "exec-info">
               <div class = "img">
-                <img src = "mos.png">
+                <img src = "https://firebasestorage.googleapis.com/v0/b/fraserunicef-c7b03.appspot.com/o/Executive%20Photos%2FRayyan%20Mahmood.png?alt=media&token=15f345a8-f0db-4fd3-a025-ac29be3f3ced">
               </div>
               <div>
                 <h3>Executive of Promotion</h3>
