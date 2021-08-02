@@ -1,11 +1,11 @@
 var menu = document.getElementById("nav-links");
 var cover = document.getElementById("cover");
-if (window.innerWidth < 830) {
+if (window.innerWidth <= 830) {
     menu.style.display = "none";
     cover.style.display = "none";
 }
 
-if (window.innerWidth < 830){
+if (window.innerWidth <= 830){
     document.documentElement.style.setProperty('--aboutTop', '60px');
     document.documentElement.style.setProperty('--aboutBottom', '78px');
     document.documentElement.style.setProperty('--aboutWidth', '310px');
@@ -64,7 +64,7 @@ else{
     
 }
 
-if(window.innerHeight > 770){
+if(window.innerHeight > 770 && window.innerHeight > 830){
     document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
 }
 else {
@@ -122,14 +122,14 @@ window.addEventListener('resize', function(event){
         document.documentElement.style.setProperty('--secHeight', 'auto');
 
     }
-    if(window.innerHeight > 770){
+    if(window.innerHeight > 770 && window.innerHeight > 830){
         document.documentElement.style.setProperty('--secHeight', String(window.innerHeight - 100) + 'px');
     }
     else {
         document.documentElement.style.setProperty('--secHeight', 'auto');
     }
     var x = document.getElementById("cont")
-    if (window.innerWidth < 830) {
+    if (window.innerWidth <= 830) {
         menu.style.display = "none";
         cover.style.display = "none";
         if (x.classList.contains("change")){
@@ -233,7 +233,7 @@ function menuFunc() {
     var menu = document.getElementById("nav-links");
     x.classList.toggle("change");
 
-    if (window.innerWidth < 830) {
+    if (window.innerWidth <= 830) {
 
         if (menu.style.display === "block"){
             menu.style.display = "none";
